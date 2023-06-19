@@ -1,11 +1,14 @@
 {
   "name": "simplefolio",
   "version": "1.0.1",
+  "homepage": "https://evelyngyl.github.io/profile/",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "parcel build"
   },
   "repository": {
@@ -18,9 +21,9 @@
   "bugs": {
     "url": "https://github.com/cobiwave/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.2",
+    "gh-pages": "^5.0.0",
     "parcel": "^2.9.2",
     "prettier": "^2.8.1"
   },
