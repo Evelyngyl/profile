@@ -8,7 +8,7 @@
   
   "scripts": {
     "start": "parcel",
-    "predeploy": "parcel build ./*.html --public-url https://evelyngyl.github.io/profile/",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "parcel build"
   },
