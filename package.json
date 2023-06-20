@@ -5,15 +5,16 @@
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
+  
   "scripts": {
     "start": "parcel",
-    "predeploy": "npm run build",
+    "predeploy": "parcel build ./*.html --public-url https://evelyngyl.github.io/profile/",
     "deploy": "gh-pages -d dist",
     "build": "parcel build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/evelyngyl/profile"
   },
   "keywords": [],
   "author": "Jacobo Martinez",
